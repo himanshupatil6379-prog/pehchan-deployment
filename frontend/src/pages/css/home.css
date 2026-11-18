@@ -1,0 +1,112 @@
+/* Enhanced mobile responsiveness */
+@media (max-width: 1024px) {
+    .activity-content {
+        gap: 2rem;
+    }
+
+    .activity-text h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Uniform height maintained via global CSS */
+
+}
+
+@media (max-width: 768px) {
+    .activity-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .activity-content.reverse {
+        direction: ltr;
+    }
+
+    .activity-text h2 {
+        font-size: 2rem;
+    }
+
+    .activity-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .activity-images-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Uniform height maintained via global CSS */
+
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .memorable-day .memorable-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .memorable-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .activity-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .activity-text p {
+        font-size: 0.95rem;
+    }
+
+    .memorable-images {
+        grid-template-columns: 1fr;
+    }
+
+    .memorable-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .memorable-text p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Message styling */
+.alert-success {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Hero banner base handled by style.css */
+
+/* Center Navbar Content on Desktop */
+@media (min-width: 769px) {
+    .nav-container {
+        justify-content: center !important;
+    }
+
+    .nav-links {
+        margin-left: 0 !important;
+        margin-right: 80px !important;
+    }
+}

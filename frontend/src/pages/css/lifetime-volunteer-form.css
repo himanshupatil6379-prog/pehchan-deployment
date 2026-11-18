@@ -1,0 +1,11 @@
+/* ==========================================================================
+   /volunteer/lifetime/ – Lifetime Volunteer application (Material Design 3)
+   Rendered inside DashboardLayout after styles/md3.css + dashboard-layout.css
+   (shared form, note and dialog styles live there).
+   ========================================================================== */
+
+.lv-card { border-top: 4px solid var(--md-sys-color-tertiary); }
+.lv-card__content { display: flex; flex-direction: column; gap: 24px; padding: 24px; }
+@media (max-width: 599px) {
+  .lv-card__content { padding: 16px; gap: 20px; }
+}

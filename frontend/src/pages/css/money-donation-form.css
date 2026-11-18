@@ -1,0 +1,89 @@
+/* ==========================================================================
+   /donate/money/ – Money donation form (Material Design 3)
+   Rendered inside DashboardLayout after styles/md3.css + dashboard-layout.css
+   (shared form, note and dialog styles live there).
+   ========================================================================== */
+
+.pay-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 1023px) {
+  .pay-layout { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ---------- Payment information ---------- */
+.pay-card { border-top: 4px solid var(--md-sys-color-tertiary); }
+.pay-card__content { display: flex; flex-direction: column; gap: 20px; padding: 20px; }
+.pay-facts { display: grid; gap: 12px; margin: 0; }
+.pay-fact {
+  min-width: 0;
+  padding: 12px 16px;
+  border-radius: var(--md-sys-shape-md);
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+.pay-fact dt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 600 12px/16px var(--md-sys-typescale-plain);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--md-sys-color-on-surface-variant);
+}
+.pay-fact dt .md-icon { font-size: 18px; color: var(--md-sys-color-tertiary); }
+.pay-fact dd { margin: 4px 0 0; font: 600 16px/24px var(--md-sys-typescale-plain); color: var(--md-sys-color-on-surface); overflow-wrap: anywhere; }
+.pay-fact--upi {
+  background: var(--md-sys-color-tertiary-container);
+  border-color: transparent;
+}
+.pay-fact--upi dt,
+.pay-fact--upi dt .md-icon { color: var(--md-sys-color-on-tertiary-container); }
+.pay-fact dd.pay-upi {
+  font: 700 18px/26px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  letter-spacing: 0.4px;
+  color: var(--md-sys-color-on-tertiary-container);
+  user-select: all;
+}
+.pay-fact dd.pay-upi:empty::before { content: '—'; font-weight: 400; opacity: 0.6; }
+
+.pay-qr { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.pay-qr__frame {
+  padding: 12px;
+  border-radius: var(--md-sys-shape-lg);
+  background: #ffffff;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: var(--md-sys-elevation-1);
+}
+.pay-qr__frame img { display: block; width: 100%; max-width: 200px; height: auto; border-radius: var(--md-sys-shape-sm); }
+.pay-qr figcaption { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.pay-qr__title { font: 700 16px/22px var(--md-sys-typescale-brand); color: var(--md-sys-color-on-surface); }
+.pay-qr__sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font: 500 13px/18px var(--md-sys-typescale-plain);
+  color: var(--md-sys-color-on-surface-variant);
+}
+.pay-qr__sub .md-icon { font-size: 15px; color: var(--md-sys-color-success); }
+
+/* ---------- Form ---------- */
+.pay-form-card { border-top: 4px solid var(--md-sys-color-primary); }
+.pay-form-card__content { padding: 24px; }
+@media (max-width: 599px) {
+  .pay-card__content,
+  .pay-form-card__content { padding: 16px; }
+}
+.pay-amount { position: relative; display: flex; align-items: center; }
+.pay-amount__prefix {
+  position: absolute;
+  left: 16px;
+  font: 600 16px/22px var(--md-sys-typescale-plain);
+  color: var(--md-sys-color-on-surface-variant);
+  pointer-events: none;
+}
+.pay-amount .md-input { padding-left: 36px; font-variant-numeric: tabular-nums; }
+.pay-file { cursor: pointer; }

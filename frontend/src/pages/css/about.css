@@ -1,0 +1,185 @@
+/* Full width gallery image */
+.about-gallery-new {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+    height: auto;
+    min-height: auto;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.gallery-bg {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    display: inline-block;
+    object-fit: contain;
+    max-height: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 1024px) {
+    .about-hero-title {
+        font-size: 3rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .team-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-new {
+        padding: 3rem 0;
+    }
+
+    .about-hero-logo-new {
+        max-width: 225px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .about-hero-text {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .who-we-are-new h2,
+    .founder-section-new h2,
+    .team-section-new h2 {
+        font-size: 2.2rem;
+    }
+
+    .who-we-are-new h3 {
+        font-size: 1.8rem;
+    }
+
+    .who-we-are-new p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .team-grid-new {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-card-new {
+        padding: 2rem 1.5rem;
+    }
+
+    .team-img-new {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-card-new h3 {
+        font-size: 1.4rem;
+    }
+
+    .team-role-new {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-new {
+        padding: 2rem 0;
+    }
+
+    .about-hero-logo-new {
+        max-width: 180px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .about-hero-title {
+        font-size: 2rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about-hero-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .who-we-are-new h2,
+    .founder-section-new h2,
+    .team-section-new h2 {
+        font-size: 1.8rem;
+    }
+
+    .who-we-are-new h3 {
+        font-size: 1.5rem;
+    }
+
+    .who-we-are-new p {
+        font-size: 0.95rem;
+    }
+
+    .founder-img-new {
+        width: 180px;
+        height: 180px;
+    }
+
+    .founder-name {
+        font-size: 1.8rem;
+    }
+
+    .founder-title-new {
+        font-size: 1.3rem;
+    }
+
+    .team-card-new {
+        padding: 1.5rem;
+    }
+
+    .team-img-new {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-card-new h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-role-new {
+        font-size: 0.9rem;
+    }
+}
+
+/* Center Navbar Content on Desktop */
+@media (min-width: 769px) {
+    .nav-container {
+        justify-content: center !important;
+    }
+
+    .nav-links {
+        margin-left: 0 !important;
+        margin-right: 80px !important;
+    }
+}

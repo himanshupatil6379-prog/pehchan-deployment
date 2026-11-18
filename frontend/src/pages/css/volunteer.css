@@ -1,0 +1,174 @@
+/* Enhanced mobile responsiveness */
+@media (max-width: 1024px) {
+    .volunteer-hero-content {
+        gap: 2rem;
+    }
+
+    .volunteer-hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .volunteer-hero-info ul {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .volunteer-hero-text {
+        text-align: center;
+    }
+
+    .volunteer-hero-img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .benefit-item {
+        padding: 1.5rem;
+    }
+
+    /* Volunteer Login Message Section */
+    .container>div[style*="background: linear-gradient"] {
+        padding: 40px 20px;
+    }
+
+    .container>div[style*="background: linear-gradient"] h2 {
+        font-size: 28px;
+    }
+
+    .container>div[style*="background: linear-gradient"] p {
+        font-size: 18px;
+    }
+
+    .container>div[style*="background: rgba"] {
+        padding: 20px;
+    }
+
+    .container>div[style*="background: rgba"] h3 {
+        font-size: 20px;
+    }
+
+    .container>div[style*="background: rgba"] li {
+        font-size: 16px;
+    }
+
+    .container>div[style*="margin-top: 40px"] {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .container>div[style*="margin-top: 40px"]>div {
+        padding: 20px;
+    }
+
+    .container>div[style*="display: inline-block"] {
+        display: block !important;
+        margin: 10px auto !important;
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .volunteer-hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .volunteer-hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .volunteer-hero-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .volunteer-hero-info ul {
+        padding-left: 0.5rem;
+    }
+
+    .volunteer-hero-info li {
+        font-size: 0.9rem;
+    }
+
+    .benefit-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Volunteer Login Message Section */
+    .container>div[style*="background: linear-gradient"] {
+        padding: 30px 15px;
+    }
+
+    .container>div[style*="background: linear-gradient"] h2 {
+        font-size: 24px;
+    }
+
+    .container>div[style*="background: linear-gradient"] p {
+        font-size: 16px;
+    }
+
+    .container>div[style*="background: linear-gradient"] .material-icons {
+        font-size: 60px;
+    }
+
+    .container>div[style*="background: rgba"] h3 {
+        font-size: 18px;
+    }
+
+    .container>div[style*="background: rgba"] li {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .container>div[style*="margin-top: 40px"]>div h4 {
+        font-size: 1.1rem;
+    }
+
+    .container>div[style*="margin-top: 40px"]>div p {
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Center Navbar Content */
+/* Center Navbar Content on Desktop */
+@media (min-width: 769px) {
+    .nav-container {
+        justify-content: center !important;
+    }
+
+    .nav-links {
+        margin-left: 0 !important;
+        margin-right: 80px !important;
+    }
+}

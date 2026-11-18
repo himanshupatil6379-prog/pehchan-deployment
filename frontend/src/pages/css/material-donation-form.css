@@ -1,0 +1,11 @@
+/* ==========================================================================
+   /donate/material/ – Material donation form (Material Design 3)
+   Rendered inside DashboardLayout after styles/md3.css + dashboard-layout.css
+   (shared form, note and dialog styles live there).
+   ========================================================================== */
+
+.mdon-card { border-top: 4px solid var(--md-sys-color-primary); }
+.mdon-card__content { padding: 24px; }
+@media (max-width: 599px) {
+  .mdon-card__content { padding: 16px; }
+}

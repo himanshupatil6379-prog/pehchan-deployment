@@ -1,0 +1,108 @@
+/* Page Title Header - Full Width */
+section.page-title {
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    text-align: center !important;
+    padding: 1rem 0 !important;
+    background: #FFF9F0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: auto !important;
+    /* Force auto height */
+    min-height: 0 !important;
+    /* Remove min-height */
+    max-height: none !important;
+    /* Remove max-height constraint */
+}
+
+section.page-title h1 {
+    color: #333 !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+/* Prevent horizontal scroll */
+body,
+html {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 1024px) {
+    .gallery-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-category h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.page-title {
+        padding: 0.8rem 0 !important;
+    }
+
+    section.page-title h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .gallery-grid-3,
+    .gallery-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .gallery-category h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    /* Uniform height maintained via global CSS */
+
+}
+
+@media (max-width: 480px) {
+    section.page-title {
+        padding: 0.6rem 0 !important;
+    }
+
+    section.page-title h1 {
+        font-size: 2rem !important;
+    }
+
+    .gallery-category {
+        margin-bottom: 2rem;
+    }
+
+    .gallery-category h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Uniform height maintained via global CSS */
+
+}
+
+/* Center Navbar Content */
+/* Center Navbar Content on Desktop */
+@media (min-width: 769px) {
+    .nav-container {
+        justify-content: center !important;
+    }
+
+    .nav-links {
+        margin-left: 0 !important;
+        margin-right: 80px !important;
+    }
+}
